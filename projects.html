@@ -1,34 +1,101 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Miguel's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .projects {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            transform: perspective(1000px) rotateY(0deg);
+            transition: transform 0.5s;
+            width: 300px;
+        }
+        .project:hover {
+            transform: perspective(1000px) rotateY(10deg);
+        }
+        .project a {
+            text-decoration: none;
+            color: #00ff00;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Projects</h1>
     </header>
-    <section>
-        <h2>Project 1: TaskMaster App</h2>
-        <p>TaskMaster is a productivity app designed to help users manage their tasks and deadlines efficiently. The app features a sleek UI, reminders, and a collaborative workspace.</p>
-        <p><strong>Technologies Used:</strong> React, Redux, Node.js, MongoDB</p>
-        <p><a href="#">Live Project</a> | <a href="#">GitHub Repository</a></p>
-        <img src="taskmaster_screenshot.jpg" alt="TaskMaster App Screenshot">
+    <div class="container">
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1: TaskMaster App</h3>
+                <p>TaskMaster is a productivity app designed to help users manage their tasks and deadlines efficiently. The app features a sleek UI, reminders, and a collaborative workspace.</p>
+                <p><strong>Technologies Used:</strong> React, Redux, Node.js, MongoDB</p>
+                <p><a href="https://liveprojectlink.com" target="_blank">Live Project</a> | <a href="https://github.com/Mystic-Miguel/TaskMaster" target="_blank">GitHub Repository</a></p>
+                <img src="https://via.placeholder.com/300x200" alt="TaskMaster App Screenshot">
+            </div>
+            <div class="project">
+                <h3>Project 2: EcoShop E-commerce Platform</h3>
+                <p>EcoShop is an e-commerce platform focused on eco-friendly products. The platform supports multiple payment methods, user reviews, and personalized recommendations.</p>
+                <p><strong>Technologies Used:</strong> Vue.js, Vuex, Firebase</p>
+                <p><a href="https://liveprojectlink.com" target="_blank">Live Project</a> | <a href="https://github.com/Mystic-Miguel/EcoShop" target="_blank">GitHub Repository</a></p>
+                <img src="https://via.placeholder.com/300x200" alt="EcoShop Platform Screenshot">
+            </div>
+            <div class="project">
+                <h3>Project 3: TravelBlog Website</h3>
+                <p>TravelBlog is a website where users can share their travel experiences through blog posts, photos, and videos. The site includes a user-friendly editor and a vibrant community forum.</p>
+                <p><strong>Technologies Used:</strong> Django, PostgreSQL, React</p>
+                <p><a href="https://liveprojectlink.com" target="_blank">Live Project</a> | <a href="https://github.com/Mystic-Miguel/TravelBlog" target="_blank">GitHub Repository</a></p>
+                <img src="https://via.placeholder.com/300x200" alt="TravelBlog Website Screenshot">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 Miguel's Portfolio</p>
+    </footer>
+</body>
+</html>
 
-        <h2>Project 2: EcoShop E-commerce Platform</h2>
-        <p>EcoShop is an e-commerce platform focused on eco-friendly products. The platform supports multiple payment methods, user reviews, and personalized recommendations.</p>
-        <p><strong>Technologies Used:</strong> Vue.js, Vuex, Firebase</p>
-        <p><a href="#">Live Project</a> | <a href="#">GitHub Repository</a></p>
-        <img src="ecoshop_screenshot.jpg" alt="EcoShop Platform Screenshot">
-
-        <h2>Project 3: TravelBlog Website</h2>
-        <p>TravelBlog is a website where users can share their travel experiences through blog posts, photos, and videos. The site includes a user-friendly editor and a vibrant community forum.</p>
-        <p><strong>Technologies Used:</strong> Django, PostgreSQL, React</p>
-        <p><a href="#">Live Project</a> | <a href="#">GitHub Repository</a></p>
-        <img src="travelblog_screenshot.jpg" alt="TravelBlog Website Screenshot">
-    </section>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>

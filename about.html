@@ -1,34 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Miguel's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Miguel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .content {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            transform: perspective(1000px) rotateY(0deg);
+            transition: transform 0.5s;
+        }
+        .content:hover {
+            transform: perspective(1000px) rotateY(10deg);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <h1>About Miguel</h1>
     </header>
-    <section>
-        <h2>Detailed Introduction</h2>
-        <p>I am a software developer with over 5 years of experience in web and mobile application development. I specialize in front-end development, particularly in React and Vue.js, and have a strong background in back-end technologies like Node.js and Python. My passion for technology drives me to constantly learn and adapt to new challenges.</p>
-        <h2>Career Background</h2>
-        <p>I began my career at Tech Solutions Inc., where I developed several high-impact web applications. Later, I joined Innovatech as a senior developer, leading a team to create scalable and user-friendly mobile apps. I hold a Bachelor's degree in Computer Science from the University of Technology.</p>
-        <h2>Personal Interests</h2>
-        <p>In my free time, I enjoy hiking, reading about the latest tech trends, and contributing to open-source projects. I'm also an avid traveler, always eager to explore new cultures and cuisines.</p>
-        <img src="miguel_casual_photo.jpg" alt="Miguel's Casual Photo">
-    </section>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="resume.html">Resume</a></li>
+    <div class="container">
+        <div class="content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I'm Miguel, a passionate software developer with a knack for creating efficient and innovative solutions. Explore my projects and get to know more about my skills and experiences.</p>
+            <img src="miguel_photo.jpg" alt="Miguel's Photo">
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 Miguel's Portfolio</p>
+    </footer>
+</body>
+</html>
+
         </ul>
     </nav>
     <footer>

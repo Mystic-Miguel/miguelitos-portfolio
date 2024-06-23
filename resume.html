@@ -1,33 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Miguel's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .resume {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            transform: perspective(1000px) rotateY(0deg);
+            transition: transform 0.5s;
+        }
+        .resume:hover {
+            transform: perspective(1000px) rotateY(10deg);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Resume</h1>
     </header>
-    <section>
-        <h2>Downloadable Resume</h2>
-        <p><a href="miguel_resume.pdf" download>Download PDF Version of Resume</a></p>
-    </section>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <div class="resume">
+            <h2>Miguel Rowe</h2>
+            <p><strong>Software Developer</strong></p>
+            <p><strong>Experience:</strong></p>
+            <ul>
+                <li>Company A - Software Developer (2020 - Present)</li>
+                <li>Company B - Junior Developer (2018 - 2020)</li>
+            </ul>
+            <p><strong>Education:</strong></p>
+            <ul>
+                <li>University X - B.Sc. in Computer Science (2014 - 2018)</li>
+            </ul>
+            <p><strong>Skills:</strong></p>
+            <ul>
+                <li>JavaScript, React, Vue.js</li>
+                <li>Python, Django</li>
+                <li>SQL, PostgreSQL, MongoDB</li>
+            </ul>
+        </div>
+    </div>
     <footer>
-        <p>&copy; 2023 Miguel's Portfolio</p>
+        <p>© 2023 Miguel's Portfolio</p>
     </footer>
+</body>
+</html>
+
 </body>
 </html>

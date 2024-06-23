@@ -1,34 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills - Miguel's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .skills {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .skill {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            transform: perspective(1000px) rotateY(0deg);
+            transition: transform 0.5s;
+            width: 300px;
+        }
+        .skill:hover {
+            transform: perspective(1000px) rotateY(10deg);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Skills</h1>
     </header>
-    <section>
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Front-end Development:</strong> React, Vue.js, HTML, CSS, JavaScript</li>
-            <li><strong>Back-end Development:</strong> Node.js, Python, Django, Express.js</li>
-            <li><strong>Databases:</strong> MongoDB, PostgreSQL, Firebase</li>
-            <li><strong>DevOps:</strong> Docker, Kubernetes, CI/CD</li>
-        </ul>
-        <h2>Soft Skills</h2>
-        <ul>
-            <li><strong>Communication:</strong> Effective in team collaboration and client interactions</li>
-            <li><strong>Problem-solving:</strong> Strong analytical skills with a solution-oriented mindset</li>
-            <li><strong>Adaptability:</strong> Quick to adapt to new technologies and environments</li>
-        </ul>
-    </section>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+    <div class="container">
+        <div class="skills">
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Proficient in JavaScript, including ES6+ features and frameworks like React and Vue.js.</p>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Experienced in Python for web development, data analysis, and machine learning.</p>
+            </div>
+            <div class="skill">
+                <h3>Database Management</h3>
+                <p>Skilled in managing databases using SQL, PostgreSQL, and MongoDB.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 Miguel's Portfolio</p>
+    </footer>
+</body>
+</html>
+
             <li><a href="projects.html">Projects</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="contact.html">Contact</a></li>

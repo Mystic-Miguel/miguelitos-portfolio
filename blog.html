@@ -1,34 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Miguel's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .blog-posts {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .blog-post {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            transform: perspective(1000px) rotateY(0deg);
+            transition: transform 0.5s;
+            width: 300px;
+        }
+        .blog-post:hover {
+            transform: perspective(1000px) rotateY(10deg);
+        }
+        .blog-post a {
+            text-decoration: none;
+            color: #00ff00;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Blog</h1>
     </header>
-    <section>
-        <h2>Blog Post 1: Introduction to React Hooks</h2>
-        <p>Learn how to use React Hooks to simplify your functional components and manage state effectively.</p>
-        <p><a href="#">Read More</a></p>
+    <div class="container">
+        <div class="blog-posts">
+            <div class="blog-post">
+                <h3>Post Title 1</h3>
+                <p>This is a summary of the first blog post. Click the link below to read more.</p>
+                <p><a href="post1.html" target="_blank">Read More</a></p>
+            </div>
+            <div class="blog-post">
+                <h3>Post Title 2</h3>
+                <p>This is a summary of the second blog post. Click the link below to read more.</p>
+                <p><a href="post2.html" target="_blank">Read More</a></p>
+            </div>
+            <div class="blog-post">
+                <h3>Post Title 3</h3>
+                <p>This is a summary of the third blog post. Click the link below to read more.</p>
+                <p><a href="post3.html" target="_blank">Read More</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 Miguel's Portfolio</p>
+    </footer>
+</body>
+</html>
 
-        <h2>Blog Post 2: Building Scalable Node.js Applications</h2>
-        <p>Explore best practices for building scalable and maintainable applications using Node.js.</p>
-        <p><a href="#">Read More</a></p>
-    </section>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="resume.html">Resume</a></li>
         </ul>
     </nav>
     <footer>

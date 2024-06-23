@@ -1,34 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials - Miguel's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Testimonials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .testimonials {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .testimonial {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            transform: perspective(1000px) rotateY(0deg);
+            transition: transform 0.5s;
+            width: 300px;
+        }
+        .testimonial:hover {
+            transform: perspective(1000px) rotateY(10deg);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Testimonials</h1>
     </header>
-    <section>
-        <h2>Testimonial 1</h2>
-        <p>"Miguel is an outstanding developer with a keen eye for detail. His ability to tackle complex problems is impressive." - Jane Doe, Project Manager at Tech Solutions Inc.</p>
+    <div class="container">
+        <div class="testimonials">
+            <div class="testimonial">
+                <h3>John Doe</h3>
+                <p>"Miguel is an exceptional developer. His attention to detail and problem-solving skills are top-notch."</p>
+            </div>
+            <div class="testimonial">
+                <h3>Jane Smith</h3>
+                <p>"Working with Miguel has been a pleasure. He consistently delivers high-quality work on time."</p>
+            </div>
+            <div class="testimonial">
+                <h3>Sam Wilson</h3>
+                <p>"Miguel's expertise in web development is impressive. He is a valuable asset to any team."</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 Miguel's Portfolio</p>
+    </footer>
+</body>
+</html>
 
-        <h2>Testimonial 2</h2>
-        <p>"Working with Miguel has been a pleasure. He is not only highly skilled but also a great team player." - John Smith, Lead Developer at Innovatech</p>
-    </section>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
-    </nav>
     <footer>
         <p>&copy; 2023 Miguel's Portfolio</p>
     </footer>
